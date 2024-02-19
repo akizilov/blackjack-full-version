@@ -5,9 +5,9 @@ dealers_mystery_card = random.randint(2,11)
 dealers_main_card = random.randint(2,11)
 dealers_cards = [dealers_main_card]
 is_blackjack_dealer = dealers_mystery_card + dealers_main_card == 21
-users_first_card = 6#random.randint(2,11)
+users_first_card = random.randint(2,11)
 if users_first_card < 11:
-    users_second_card = 6#random.randint(1,10)
+    users_second_card = random.randint(1,10)
 else:
     users_second_card = random.randint(2,11)
 total_card_pile = users_first_card + users_second_card
